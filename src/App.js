@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import JakisDomyslny, { zmienna2, zmienna4, testowa, testowa2 } from './App.const.js';
 import HelloWorld from './components/HelloWorld';
+import Clock from './components/Clock';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <HelloWorld />
+        <Clock />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {/* Edit <code>src/App.js</code> and save to reload. */}
