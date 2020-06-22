@@ -8,17 +8,19 @@ export default class Clicker extends React.Component {
         }
     }
 
+    handleClick() {
+        this.setState({
+            counter: this.state.counter + 1
+        })
+    }
+
     render() {
         const { counter } = this.props;
 
-        function handleClick() {
-            this.setState({
-                counter: this.state.counter + 1
-            })
-        }
+
         return (
             <div>
-                <h1 onClick={handleClick.bind(this)}>
+                <h1 onClick={this.handleClick.bind(this)}>
 
                     ile kliknięć: {this.state.counter}</h1>
             </div>

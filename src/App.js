@@ -6,6 +6,10 @@ import HelloWorld from './components/HelloWorld';
 import Clock from './components/Clock';
 import Message from './components/Message';
 import Clicker from './components/Clicker';
+import Click from './components/Click';
+import Image from './components/Image';
+import Text from './components/Text';
+import TwoColumns from './components/TwoColumns';
 
 function App() {
 
@@ -48,6 +52,14 @@ function App() {
       <Clicker />
       <Clicker />
       <Clicker />
+      <Click defaultValue={5}/>
+      <Click />
+      <Click />
+      <Click />
+      <TwoColumns>
+      <Text title="alamakota"> asdf</Text>
+      <Image />
+      </TwoColumns>
 
     </div>
   );
