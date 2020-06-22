@@ -4,12 +4,15 @@ import './App.css';
 import JakisDomyslny, { zmienna2, zmienna4, testowa, testowa2 } from './App.const.js';
 import HelloWorld from './components/HelloWorld';
 import Clock from './components/Clock';
+import Message from './components/Message';
+import Clicker from './components/Clicker';
 
 function App() {
 
   const mojTekst = 'CodeMe! React lessons!';
   // testowa('Nieoczekiwany błąd');
-
+  const zmiennazTytulem = "tytul ze zmiennej";
+  const tytulZFunkcji = () => 'zwraca jakis tytul z funkcji';
   return (
     <div className="App">
       <header className="App-header">
@@ -32,6 +35,20 @@ function App() {
           Learn React
         </a>
       </header>
+      <Message titleFunction={tytulZFunkcji} text="ala ma kota" />
+      <Message title={zmiennazTytulem} text="ala ma kota2" />
+      <Message title={tytulZFunkcji()} text="ala ma kota3" />
+      <Message title="tytul komponentu" text="ala ma kota4" />
+      <Message title="tytull">
+        <p>Ala ma kota</p>
+        <p>Ala ma kota</p>
+        <p>Ala ma kota</p>
+        <p>Ala ma kota</p>
+      </Message>
+      <Clicker />
+      <Clicker />
+      <Clicker />
+
     </div>
   );
 }
