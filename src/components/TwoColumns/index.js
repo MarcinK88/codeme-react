@@ -3,7 +3,7 @@ import React from 'react';
 export default class TwoColumns extends React.Component {
 
     render() {
-        const { title, text, titleFunction, children } = this.props;
+        const { children } = this.props;
         return (
             <div><p>
                 <table>
