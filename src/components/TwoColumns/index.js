@@ -1,20 +1,15 @@
 import React from 'react';
+import './style.css';
 
-export default class TwoColumns extends React.Component {
-
-    render() {
-        const { children } = this.props;
-        return (
-            <div><p>
-                <table>
-                    <tr>
-                        <td>{children[0]}</td>
-                        <td>{children[1]}</td>
-                    </tr>
-                </table>
-                </p>
+export default function TwoColumn(props) {
+    return (
+        <div class="two-column-grid">
+            <div>
+                {props.children[0]}
             </div>
-        )
-    }
-
+            <div>
+                {props.children[1]}
+            </div>
+        </div>
+    )
 }

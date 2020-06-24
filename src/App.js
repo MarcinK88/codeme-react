@@ -10,6 +10,7 @@ import Click from './components/Click';
 import Image from './components/Image';
 import Text from './components/Text';
 import TwoColumns from './components/TwoColumns';
+import ClickState from './components/ClickState';
 
 function App() {
 
@@ -52,14 +53,19 @@ function App() {
       <Clicker />
       <Clicker />
       <Clicker />
-      <Click defaultValue={5}/>
+      <Click defaultValue={5} />
       <Click />
       <Click />
       <Click />
       <TwoColumns>
-      <Text title="alamakota"> asdf</Text>
-      <Image />
+        <Text title="alamakota"> asdf</Text>
+        <Image src={require("./images/obrazek.jpg")} />
       </TwoColumns>
+      <TwoColumns>
+        <Image src={require("./images/obrazek.jpg")} />
+        <Text title="alamakota"> asdf</Text>
+      </TwoColumns>
+      <ClickState />
 
     </div>
   );
